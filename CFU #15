@@ -1,0 +1,22 @@
+# Aritra Paul
+# 12/15/2025
+# CFU15 - Happy Shapes
+
+import simplegui
+
+def draw_handler(canvas):
+    #corner
+    canvas.draw_polygon([(10, 10), (190, 10), (100, 190)], 10, "Green")
+    
+    # Left
+    canvas.draw_polygon([(80, 40), (100, 40), (90, 60)], 5, "Green")
+    
+    # Right eye
+    canvas.draw_polygon([(100, 40), (120, 40), (110, 60)], 5, "Green")
+    
+    # Smile 
+    canvas.draw_polygon([(90, 100), (110, 100), (100, 120)], 5, "Green")
+
+frame = simplegui.create_frame("CFU15 Happy Shapes", 200, 200)
+frame.set_draw_handler(draw_handler)
+frame.start()
