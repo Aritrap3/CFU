@@ -1,0 +1,27 @@
+# Aritra Paul
+# 12/15/2025
+# CFU16 - Happy circle
+
+import simplegui
+
+def draw_handler(canvas):
+    # face border 
+    canvas.draw_circle((100, 100), 80, 5, "yellow")
+    
+    # Left eye
+    canvas.draw_circle((70, 80), 10, 20, "yellow", "yellow")
+    
+    
+    # Right eye
+    canvas.draw_circle((130, 80), 10, 20, "yellow", "yellow")
+    
+    # Smile 
+    canvas.draw_circle((70, 130), 5, 3, "yellow", "yellow")
+    canvas.draw_circle((85, 135), 5, 3, "yellow", "yellow")
+    canvas.draw_circle((100, 135), 5, 3, "yellow", "yellow")
+    canvas.draw_circle((115, 135), 5, 3, "yellow", "yellow")
+    canvas.draw_circle((130, 130), 5, 3, "yellow", "yellow")
+    
+frame = simplegui.create_frame("CFU16 Happy circle", 200, 200)
+frame.set_draw_handler(draw_handler)
+frame.start()
