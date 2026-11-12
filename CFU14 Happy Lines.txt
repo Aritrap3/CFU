@@ -1,0 +1,33 @@
+# Aritra Paul
+# 12/15/2025
+# CFU14 - Happy face with lines
+
+import simplegui
+
+def draw_handler(canvas):
+    # Face
+    canvas.draw_line((20, 20), (180, 20), 5, 'Red')
+    canvas.draw_line((20, 180), (180, 180), 5, 'Red')
+    canvas.draw_line((180, 20), (180, 180), 5, 'Red')
+    canvas.draw_line((20, 20), (20, 180), 5, 'Red')
+    
+    # Mouth
+    canvas.draw_line((40, 150), (40, 160), 5, 'Red')
+    canvas.draw_line((40, 160), (160, 160), 5, 'Red')
+    canvas.draw_line((160, 150), (160, 160), 5, 'Red')
+    
+    # Left eye
+    canvas.draw_line((50, 70), (70, 70), 3, 'Red')
+    canvas.draw_line((70, 70), (70, 90), 3, 'Red')
+    canvas.draw_line((70, 90), (50, 90), 3, 'Red')
+    canvas.draw_line((50, 90), (50, 70), 3, 'Red')
+    
+    # Right  eye
+    canvas.draw_line((130, 70), (150, 70), 3, 'Red')
+    canvas.draw_line((150, 70), (150, 90), 3, 'Red')
+    canvas.draw_line((150, 90), (130, 90), 3, 'Red')
+    canvas.draw_line((130, 90), (130, 70), 3, 'Red')
+
+frame = simplegui.create_frame("CFU14 Happy Lines", 200, 200)
+frame.set_draw_handler(draw_handler)
+frame.start()
