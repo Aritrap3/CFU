@@ -1,0 +1,33 @@
+#Aritra Paul
+#12/15/2025
+#We make a smily face with just dots
+
+
+
+import simplegui
+
+def draw_handler(canvas):
+    # Body 
+    canvas.draw_point((100, 60), "blue")  
+    canvas.draw_point((70, 70), "blue")  
+    canvas.draw_point((100, 140), "blue") 
+    canvas.draw_point((70, 130), "blue")  
+    canvas.draw_point((140, 100), "blue")  
+    canvas.draw_point((130, 70), "blue")
+    canvas.draw_point((130, 130), "blue") 
+    canvas.draw_point((60, 100), "blue") 
+    
+    # Eyes
+    canvas.draw_point((95, 90), "red")
+    canvas.draw_point((105, 90), "red")
+
+    # Mouth
+    canvas.draw_point((85, 100), "green")
+    canvas.draw_point((90, 110), "green")
+    canvas.draw_point((100, 115), "green")
+    canvas.draw_point((110, 110), "green")
+    canvas.draw_point((115, 100), "green")
+
+frame = simplegui.create_frame("CFU13 Happy Dots", 200, 200)
+frame.set_draw_handler(draw_handler)
+frame.start()

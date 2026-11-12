@@ -1,0 +1,16 @@
+'''Name: Aritra
+Date: 09/18/2025
+Description: We are creating a interactive program that asks the user for 2 numbers 
+and outputs the calculation expression and the result'''
+number1 = int(input("Give me a number"))
+number2 = int(input("Give me another number"))
+add = number1 + number2
+sub = number1 - number2
+multi = number1 * number2
+divi = number1 / number2
+modu = number1 % number2
+print(" When you add the numbers you will get " + str(add))
+print(" When you subtract the numbers you will get " + str(sub))
+print(" When you multiply the numbers you will get " + str(multi))
+print(" When you divide the numbers you will get " + str(divi))
+print(" When you percent out the numbers you will get " + str(modu))
